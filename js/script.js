@@ -37,7 +37,7 @@ function generateSignature() {
                                 <td>
                                     <strong>${firstName} ${lastName}</strong><br>
                                     <em>${position}</em><br><br>
-                                    ${phoneIcon} ${phone}<br>
+                                    ${phoneIcon} <a href="tel:${phone}">${phone}</a><br>
                                     ${emailIcon} <a href="mailto:${email}">${email}</a><br>
                                     ${websiteIcon} <a href="${website}" target="_blank">${website}</a><br>
                                     <div class="social-icons">${socialIconsHTML}</div>
@@ -72,7 +72,7 @@ function generateSignature() {
                         <img class="logo" src="${logoURL}" alt="Logo">
                         <strong>${firstName} ${lastName}</strong><br>
                         ${phoneIcon} <a href="tel:${phone}">${phone}</a></em><br><br>
-                        ${phoneIcon} ${phone}<br>
+                        ${phoneIcon} <a href="tel:${phone}">${phone}</a><br>
                         ${emailIcon} <a href="mailto:${email}">${email}</a><br>
                         ${websiteIcon} <a href="${website}" target="_blank">${website}</a><br>
                         <div class="social-icons">${socialIconsHTML}</div>
