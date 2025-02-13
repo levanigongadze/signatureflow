@@ -23,7 +23,16 @@ header h1 {
 }
 
 .logo {
-    width: 80px;
+    width: 120px;
+    height: 30px;
+}
+
+.logo-block {
+    background: #f7f7f7;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 60px 0;
 }
 
 .container {
@@ -40,7 +49,9 @@ header h1 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.form-container input, .form-container select, .form-container button {
+.form-container input,
+.form-container select,
+.form-container button {
     width: 100%;
     padding: 5px 15px;
     margin-bottom: 5px;
@@ -108,7 +119,9 @@ header h1 {
         padding: 15px;
     }
 
-    .form-container input, .form-container select, .form-container button {
+    .form-container input,
+    .form-container select,
+    .form-container button {
         font-size: 0.9rem;
     }
 }

@@ -22,9 +22,9 @@ function generateSignature() {
         if (youtubeLink) socialIconsHTML += `<a href="${youtubeLink}" target="_blank"><img style="width:15px;height:15px;"src="https://www.svgrepo.com/show/521051/youtube.svg" alt="YouTube"></a>`;
         if (linkedinLink) socialIconsHTML += `<a href="${linkedinLink}" target="_blank"><img style="width:15px;height:15px;"src="https://www.svgrepo.com/show/512419/linkedin-161.svg" alt="LinkedIn"></a>`;
 
-        const phoneIcon = `<img src="https://www.svgrepo.com/show/529760/phone-calling.svg" alt="Phone" style="width: 20px; height: 20px; fill: #494949;">`;
-        const emailIcon = `<img src="https://www.svgrepo.com/show/488920/email.svg" alt="Email" style="width: 20px; height: 20px; fill: #494949;">`;
-        const websiteIcon = `<img src="https://www.svgrepo.com/show/521261/web.svg" alt="Website" style="width: 20px; height: 20px; fill: #494949;">`;
+        const phoneIcon = `<img src="images/phone-call.png" alt="Phone" style="width: 20px; height: 20px; fill: #494949;">`;
+        const emailIcon = `<img src="images/mail.png" alt="Email" style="width: 20px; height: 20px; fill: #494949;">`;
+        const websiteIcon = `<img src="images/pin.png" alt="Website" style="width: 20px; height: 20px; fill: #494949;">`;
 
         let signatureHTML = '';
         switch (templateType) {
@@ -33,7 +33,7 @@ function generateSignature() {
                     <div class="signature-box simple">
                         <table cellpadding="0" cellspacing="0" width="460">
                             <tr>
-                                <td><img class="logo" src="${logoURL}" alt="Logo"></td>
+                                <td><div class="logo-block"><img class="logo" src="${logoURL}" alt="Logo"></div></td>
                                 <td>
                                     <strong>${firstName} ${lastName}</strong><br>
                                     <em>${position}</em><br><br>
@@ -52,7 +52,7 @@ function generateSignature() {
                     <div class="signature-box classic">
                         <table cellpadding="0" cellspacing="0" width="460">
                             <tr>
-                                <td><img class="logo" src="${logoURL}" alt="Logo"></td>
+                                <td><div class="logo-block"><img class="logo" src="${logoURL}" alt="Logo"></div></td>
                                 <td>
                                     <strong>${firstName} ${lastName}</strong><br>
                                     <em>${position}</em><br><br>
@@ -69,7 +69,7 @@ function generateSignature() {
             case 'modern':
                 signatureHTML = `
                     <div class="signature-box modern">
-                        <img class="logo" src="${logoURL}" alt="Logo">
+                        <div class="logo-block"><img class="logo" src="${logoURL}" alt="Logo"></div>
                         <strong>${firstName} ${lastName}</strong><br>
                         ${phoneIcon} <a href="tel:${phone}">${phone}</a></em><br><br>
                         ${phoneIcon} <a href="tel:${phone}">${phone}</a><br>
@@ -84,7 +84,7 @@ function generateSignature() {
                     <div class="signature-box advanced">
                         <table cellpadding="0" cellspacing="0" width="460">
                             <tr>
-                                <td><img class="logo" src="${logoURL}" alt="Logo"></td>
+                                <td><div class="logo-block"><img class="logo" src="${logoURL}" alt="Logo"></div></td>
                                 <td>
                                     <strong>${firstName} ${lastName}</strong><br>
                                     <em>${position}</em><br><br>
