@@ -4,7 +4,10 @@ function generateSignature() {
     const position = document.getElementById('position').value;
     const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
-    const website = document.getElementById('website').value;
+
+    const websiteUrl = document.getElementById('website').value;
+    const website = websiteUrl.replace(/https?:\/\//, 'www').replace(/\//g, '');
+
     const logoURL = document.getElementById('logoURL').value;
     const facebookLink = document.getElementById('facebook').value;
     const twitterLink = document.getElementById('twitter').value;
