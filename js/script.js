@@ -5,8 +5,8 @@ function generateSignature() {
     const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
 
-    const websiteUrl = document.getElementById('website').value;
-    const website = websiteUrl.replace(/https?:\/\//, 'www').replace(/\//g, '');
+    const website = document.getElementById('website').value;
+    const formattedWebsite = website.replace(/https?:\/\//, 'www').replace(/\//g, '');
 
     const logoURL = document.getElementById('logoURL').value;
     const facebookLink = document.getElementById('facebook').value;
@@ -42,7 +42,7 @@ function generateSignature() {
                                     <em>${position}</em><br><br>
                                     ${phoneIcon} <a href="tel:${phone}">${phone}</a><br>
                                     ${emailIcon} <a href="mailto:${email}">${email}</a><br>
-                                    ${websiteIcon} <a href="${website}" target="_blank">${website}</a><br>
+                                    ${websiteIcon} <a href="${website}" target="_blank">${formattedWebsite}</a><br>
                                     <div class="social-icons">${socialIconsHTML}</div>
                                 </td>
                             </tr>
@@ -61,7 +61,7 @@ function generateSignature() {
                                     <em>${position}</em><br><br>
                                     ${phoneIcon} <a href="tel:${phone}">${phone}</a><br>
                                     ${emailIcon} <a href="mailto:${email}">${email}</a><br>
-                                    ${websiteIcon} <a href="${website}" target="_blank">${website}</a><br>
+                                    ${websiteIcon} <a href="${website}" target="_blank">${formattedWebsite}</a><br>
                                     <div class="social-icons">${socialIconsHTML}</div>
                                 </td>
                             </tr>
@@ -77,7 +77,7 @@ function generateSignature() {
                         ${phoneIcon} <a href="tel:${phone}">${phone}</a></em><br><br>
                         ${phoneIcon} <a href="tel:${phone}">${phone}</a><br>
                         ${emailIcon} <a href="mailto:${email}">${email}</a><br>
-                        ${websiteIcon} <a href="${website}" target="_blank">${website}</a><br>
+                        ${websiteIcon} <a href="${website}" target="_blank">${formattedWebsite}</a><br>
                         <div class="social-icons">${socialIconsHTML}</div>
                     </div>
                 `;
@@ -93,7 +93,7 @@ function generateSignature() {
                                     <em>${position}</em><br><br>
                                     ${phoneIcon} <a href="tel:${phone}">${phone}</a><br>
                                     ${emailIcon} <a href="mailto:${email}">${email}</a><br>
-                                    ${websiteIcon} <a href="${website}" target="_blank">${website}</a><br>
+                                    ${websiteIcon} <a href="${website}" target="_blank">${formattedWebsite}</a><br>
                                     <div class="social-icons">${socialIconsHTML}</div>
                                 </td>
                             </tr>
